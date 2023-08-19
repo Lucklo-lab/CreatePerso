@@ -1,0 +1,24 @@
+import React from "react";
+
+
+const component = (props) =>(
+    <div>
+       <div>
+          <img 
+          style={{
+            opacity: props.isCurrentArme ? "1" : "0.7",
+            cursor:"pointer"
+          }}
+          src={props.imageArme}
+           alt={props.children} 
+            onClick={props.clic}
+           />
+       </div>
+       <div>
+           { props.children }
+       </div>
+       
+    </div>
+);
+
+export default component;
